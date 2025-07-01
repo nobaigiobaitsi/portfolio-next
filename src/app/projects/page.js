@@ -1,8 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
 import AnimatedSection from "../components/AnimatedSection";
+import Carousel from "../components/Carousel";
+
 
 export default function ProjectsPage() {
+
+  const inventoryImages = [
+    "/projects/inventoryManagement/Inventory-Management-1.png",
+    "/projects/inventoryManagement/Inventory-Management-2.png",
+    "/projects/inventoryManagement/Inventory-Management-3.png",
+    "/projects/inventoryManagement/Inventory-Management-4.png",
+    "/projects/inventoryManagement/Inventory-Management-5.png",
+  ];
+
+  const greekendImages = [
+    "/projects/greekendTransfers/Greekend-Transfers-1.png",
+    "/projects/greekendTransfers/Greekend-Transfers-2.png",
+    "/projects/greekendTransfers/Greekend-Transfers-3.png",
+    "/projects/greekendTransfers/Greekend-Transfers-4.png",
+    "/projects/greekendTransfers/Greekend-Transfers-5.png",
+    "/projects/greekendTransfers/Greekend-Transfers-6.png",
+  ];
+
   return (
     <main className="px-4 sm:px-8 lg:px-16 mx-auto bg-gradient-to-br from-[#0a0a23] to-[#1a1a2e] min-h-screen text-[#e0e6ed]">
       <AnimatedSection>
@@ -23,10 +43,11 @@ export default function ProjectsPage() {
             <h3 className="text-xl font-semibold text-[#e0e6ed] mb-2">
               Inventory Management System
             </h3>
+            <Carousel images={inventoryImages} />
             <p className="text-gray-400 text-sm mb-4">
-              A full-featured inventory system built with Django, Python and Tailwind CSS featuring 4 operations (Add Product, Update Product, Delete Product, View Products). It&apos;s designed to be user-friendly and efficient, helping users manage their inventory effortlessly.
+              A full-featured inventory system built with Django, Python and Bootstrap featuring 4 operations (Add Product, Update Product, Delete Product, View Products). It&apos;s designed to be user-friendly and efficient, helping users manage their inventory effortlessly.
             </p>
-            <p className="text-sm text-sky-400 mb-2">Django · Python · Tailwind CSS</p>
+            <p className="text-sm text-sky-400 mb-2">Django · Python · Bootstrap</p>
             <div className="flex gap-4 mt-2">
               <a
                 href="https://github.com/nobaigiobaitsi/inventory-django.git"
@@ -47,6 +68,7 @@ export default function ProjectsPage() {
             <h3 className="text-xl font-semibold text-[#e0e6ed] mb-2">
               Greekend Transfers
             </h3>
+            <Carousel images={greekendImages} />
             <p className="text-gray-400 text-sm mb-4">
               A live website built for Greekend Transfers, a company offering transportation services, rentals, and tours across Greece. This site is built with React + Vite, JavaScript and classic CSS. It features a modern design, responsive layout, and smooth user experience, showcasing my skills in front-end development.
             </p>
