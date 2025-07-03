@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import AnimatedSection from "../components/AnimatedSection";
 import Carousel from "../components/Carousel";
-
+import MiniNavbarProjects from "../components/MiniNavbarProjects"
 
 export default function ProjectsPage() {
 
@@ -33,11 +33,12 @@ export default function ProjectsPage() {
           <p className="mt-2 text-gray-400 text-lg">
             A collection of personal and professional work showcasing my skills and growth.
           </p>
+          <MiniNavbarProjects />
         </section>
       </AnimatedSection>
 
       <AnimatedSection>
-        <section className="gap-8 py-12 border-t border-gray-700 w-full">
+        <section id="ims" className="gap-8 py-12 border-t border-gray-700 w-full">
 
           <div className="bg-[#1e1e30] rounded-lg border border-[#2c2c3d] p-6 hover:border-sky-500 hover:shadow-sky-400/20 shadow-md transition-transform transform hover:scale-[1.03]">
             <h3 className="text-xl font-semibold text-[#e0e6ed] mb-2">
@@ -62,7 +63,7 @@ export default function ProjectsPage() {
       </AnimatedSection>
 
       <AnimatedSection>
-        <section className="gap-8 py-12 border-t border-gray-700 w-full">
+        <section id="ts" className="gap-8 py-12 border-t border-gray-700 w-full">
 
           <div className="bg-[#1e1e30] rounded-lg border border-[#2c2c3d] p-6 hover:border-sky-500 hover:shadow-sky-400/20 shadow-md transition-transform transform hover:scale-[1.03]">
             <h3 className="text-xl font-semibold text-[#e0e6ed] mb-2">
@@ -94,7 +95,7 @@ export default function ProjectsPage() {
       </AnimatedSection>
 
       <AnimatedSection>
-        <section className="gap-8 py-12 border-t border-gray-700 w-full">
+        <section id="aiplc" className="gap-8 py-12 border-t border-gray-700 w-full">
 
           <div className="bg-[#1e1e30] rounded-lg border border-[#2c2c3d] p-6 hover:border-sky-500 hover:shadow-sky-400/20 shadow-md transition-transform transform hover:scale-[1.03]">
             <h3 className="text-xl font-semibold text-[#e0e6ed] mb-2">
@@ -118,7 +119,7 @@ export default function ProjectsPage() {
       </AnimatedSection>
 
       <AnimatedSection>
-        <section className="gap-8 py-12 border-t border-gray-700 w-full">
+        <section id="mps" className="gap-8 py-12 border-t border-gray-700 w-full">
 
           <div className="bg-[#1e1e30] rounded-lg border border-[#2c2c3d] p-6 hover:border-sky-500 hover:shadow-sky-400/20 shadow-md transition-transform transform hover:scale-[1.03]">
             <h3 className="text-xl font-semibold text-[#e0e6ed] mb-2">
