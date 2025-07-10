@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SiReact, SiTailwindcss, SiNextdotjs, SiDjango } from "react-icons/si";
-import { FaJava, FaPython, FaNodeJs, FaGitAlt, FaHtml5, FaLinkedinIn, FaCss3, FaBootstrap, FaDocker } from "react-icons/fa";
+import { FaJava, FaPython, FaNodeJs, FaGitAlt, FaHtml5, FaLinkedinIn, FaCss3, FaBootstrap, FaDocker, FaMicrosoft } from "react-icons/fa";
 import { VscVscode, VscGithubInverted } from "react-icons/vsc";
 import { DiVisualstudio, DiJavascript1, DiPostgresql, DiMysql, DiMongodb, DiMsqlServer } from "react-icons/di";
 import { TbSql, TbBrandCSharp, TbFileCv } from "react-icons/tb";
@@ -68,6 +68,7 @@ export default function HomePage() {
               <li><SiDjango className="inline mr-1 text-sky-400" title="Django" /> Django</li>
               <li><SiReact className="inline mr-1 text-sky-400" title="React" /> React</li>
               <li><BiLogoSpringBoot className="inline mr-1 text-sky-400" title="Spring Boot" /> Spring Boot</li>
+              <li><FaMicrosoft className="inline mr-1 text-sky-400" title="WPF" /> WPF</li>
             </ul>
           </div>
 
