@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { SiReact, SiTailwindcss, SiNextdotjs, SiDjango } from "react-icons/si";
-import { FaJava, FaPython, FaNodeJs, FaGitAlt, FaHtml5, FaLinkedinIn } from "react-icons/fa";
+import { FaJava, FaPython, FaNodeJs, FaGitAlt, FaHtml5, FaLinkedinIn, FaCss3, FaBootstrap, FaDocker } from "react-icons/fa";
 import { VscVscode, VscGithubInverted } from "react-icons/vsc";
-import { DiVisualstudio, DiJavascript1 } from "react-icons/di";
+import { DiVisualstudio, DiJavascript1, DiPostgresql, DiMysql, DiMongodb, DiMsqlServer } from "react-icons/di";
 import { TbSql, TbBrandCSharp, TbFileCv } from "react-icons/tb";
-import { MdAccountTree } from "react-icons/md";
+import { SiSqlite, SiIntellijidea } from "react-icons/si";
+import { BiLogoSpringBoot } from "react-icons/bi";
 import AnimatedSection from "./components/AnimatedSection";
 
 export default function HomePage() {
@@ -48,34 +49,37 @@ export default function HomePage() {
       <section className="mt-12 py-12 border-t border-gray-700">
         <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-cyan-300 mb-6 flex items-center justify-center gap-2">Tech Stack</h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-gray-400 bg-[#1e1e30] p-4 rounded-lg shadow-inner">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 text-gray-400 bg-[#1e1e30] p-4 rounded-lg shadow-inner">
           <div>
-            <h3 className="font-medium text-[#e0e6ed]">Frontend</h3>
+            <h3 className="font-medium text-[#e0e6ed]">Databases</h3>
             <ul className="space-y-1 ">
-              <li><SiReact className="inline mr-1 text-sky-400" title="React" /> React</li>
-              <li><SiNextdotjs className="inline mr-1 text-sky-400" title="Next.js" /> Next.js</li>
-              <li><SiTailwindcss className="inline mr-1 text-sky-400" title="Tailwind CSS" /> Tailwind CSS</li>
-              <li><FaHtml5 className="inline mr-1 text-sky-400" title="HTML & CSS" /> HTML & CSS</li>
+              <li><DiPostgresql className="inline mr-1 text-sky-400" title="PostgreSQL" /> PostgreSQL</li>
+              <li><DiMysql className="inline mr-1 text-sky-400" title="MySQL" /> MySQL</li>
+              <li><SiSqlite className="inline mr-1 text-sky-400" title="SQLite" /> SQLite</li>
+              <li><DiMongodb className="inline mr-1 text-sky-400" title="MongoDB" /> MongoDB</li>
+              <li><DiMsqlServer className="inline mr-1 text-sky-400" title="Microsoft SQL Server" /> Microsoft SQL Server</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-medium text-[#e0e6ed]">Backend</h3>
+            <h3 className="font-medium text-[#e0e6ed]">Frameworks</h3>
             <ul className="space-y-1">
-              <li><FaNodeJs className="inline mr-1 text-sky-400" title="Node.js" /> Node.js</li>
+              <li><SiNextdotjs className="inline mr-1 text-sky-400" title="Next.js" /> Next.js</li>
               <li><SiDjango className="inline mr-1 text-sky-400" title="Django" /> Django</li>
-              <li><TbSql className="inline mr-1 text-sky-400" title="SQL" /> SQL</li>
-              <li><MdAccountTree className="inline mr-1 text-sky-400" title="REST APIs" /> REST APIs</li>
+              <li><SiReact className="inline mr-1 text-sky-400" title="React" /> React</li>
+              <li><BiLogoSpringBoot className="inline mr-1 text-sky-400" title="Spring Boot" /> Spring Boot</li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium text-[#e0e6ed]">Languages</h3>
             <ul className="space-y-1">
-              <li><FaJava className="inline mr-1 text-sky-400" title="Java" /> Java</li>
               <li><DiJavascript1 className="inline mr-1 text-sky-400" title="JavaScript" /> JavaScript</li>
               <li><FaPython className="inline mr-1 text-sky-400" title="Python" /> Python</li>
+              <li><FaJava className="inline mr-1 text-sky-400" title="Java" /> Java</li>
               <li><TbBrandCSharp className="inline mr-1 text-sky-400" title="C#" /> C#</li>
+              <li><TbSql className="inline mr-1 text-sky-400" title="SQL" /> SQL</li>
+              <li><FaHtml5 className="inline mr-1 text-sky-400" title="HTML" /> HTML</li>
             </ul>
           </div>
 
@@ -84,10 +88,29 @@ export default function HomePage() {
             <ul className="space-y-1">
               <li><FaGitAlt className="inline mr-1 text-sky-400" title="Git" /> Git</li>
               <li><VscGithubInverted className="inline mr-1 text-sky-400" title="GitHub" /> GitHub</li>
+              <li><FaDocker className="inline mr-1 text-sky-400" title="GitHub" /> Docker</li>
+              <li><FaNodeJs className="inline mr-1 text-sky-400" title="Node.js" /> Node.js</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-medium text-[#e0e6ed] ">IDEs</h3>
+            <ul className="space-y-1">
+              <li><SiIntellijidea className="inline mr-1 text-sky-400" title="IntelliJ IDEA" /> IntelliJ IDEA</li>
               <li><VscVscode className="inline mr-1 text-sky-400" title="Visual Studio Code" /> Visual Studio Code</li>
               <li><DiVisualstudio className="inline mr-1 text-sky-400" title="Visual Studio" /> Visual Studio</li>
             </ul>
           </div>
+
+          <div>
+            <h3 className="font-medium text-[#e0e6ed] ">CSS Frameworks</h3>
+            <ul className="space-y-1">
+              <li><FaCss3 className="inline mr-1 text-sky-400" title="CSS" /> Vanilla CSS</li>
+              <li><SiTailwindcss className="inline mr-1 text-sky-400" title="Tailwind CSS" /> Tailwind CSS</li>
+              <li><FaBootstrap className="inline mr-1 text-sky-400" title="Bootstrap" /> Bootstrap</li>
+            </ul>
+          </div>
+
         </div>
       </section>
       </AnimatedSection>
