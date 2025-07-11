@@ -7,6 +7,7 @@ import { TbSql, TbBrandCSharp, TbFileCv } from "react-icons/tb";
 import { SiSqlite, SiIntellijidea } from "react-icons/si";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import AnimatedSection from "./components/AnimatedSection";
+import Image from 'next/image';
 
 export default function HomePage() {
   return (
@@ -110,10 +111,44 @@ export default function HomePage() {
               <li><SiTailwindcss className="inline mr-1 text-sky-400" title="Tailwind CSS" /> Tailwind CSS</li>
               <li><FaBootstrap className="inline mr-1 text-sky-400" title="Bootstrap" /> Bootstrap</li>
             </ul>
-          </div>
+          </div >
 
         </div>
       </section>
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <section className="mb-12 py-12 border-t border-gray-700">
+          <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-cyan-300 mb-6 flex items-center justify-center gap-2">Some of my Certificates</h2>
+          <p className="text-[#e0e6ed] bg-[#1e1e30] p-6 rounded-lg mb-6 border border-[#2c2c3d] duration-300 ease-in-out hover:shadow-lg hover:border-sky-500 hover:shadow-sky-400/20 shadow-md transition-transform transform hover:scale-[1.03]">Here are some of my certifications from courses I took to enhance my software development skills. Every course and certificate I attend, I try to choose it based on how engaging it is and how many hands-on projects it has.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 px-4">
+                  {[
+                    { src: "/certificates/certPython1.jpg", alt: "Python Certificate" },
+                    { src: "/certificates/certSQL.jpg", alt: "SQL Certificate" },
+                    { src: "/certificates/certECDL.jpg", alt: "ECDL Certificate" },
+                    { src: "/certificates/certR.jpg", alt: "R Certificate" },
+                    { src: "/certificates/certBusiness.jpg", alt: "Business Certificate" },
+                    { src: "/certificates/certEnglish.jpg", alt: "English Certificate" },
+                  ].map((cert, idx) => (
+                    <a
+                      key={idx}
+                      href={cert.src}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block border border-[#2c2c3d] rounded-lg overflow-hidden hover:shadow-lg hover:border-sky-500 transition-transform transform hover:scale-105 bg-[#1e1e30]"
+                    >
+                      <Image
+                        width={600}
+                        height={400}
+                        src={cert.src}
+                        alt={cert.alt}
+                        className="w-full h-48 object-cover object-center"
+                      />
+                    </a>
+                  ))}
+          </div>
+          {/* <div>Currently, I am attending Coding Factory, a course made from Athens University of Economics and Business. It focuses on Java, JavaScript, Python, SQL, </div> */}
+        </section>
       </AnimatedSection>
 
       <AnimatedSection>
